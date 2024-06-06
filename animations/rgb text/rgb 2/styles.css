@@ -1,0 +1,64 @@
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.neon-text {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #00e6ff,
+      0 0 30px #00e6ff,
+      0 0 40px #00e6ff,
+      0 0 50px #00e6ff,
+      0 0 60px #00e6ff,
+      0 0 70px #00e6ff;
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0% {
+      opacity: 1;
+      text-shadow:
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 20px #00e6ff,
+          0 0 30px #00e6ff,
+          0 0 40px #00e6ff,
+          0 0 50px #00e6ff,
+          0 0 60px #00e6ff,
+          0 0 70px #00e6ff;
+  }
+  50% {
+      opacity: 0.8;
+      text-shadow:
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 20px #ff00ff,
+          0 0 30px #ff00ff,
+          0 0 40px #ff00ff,
+          0 0 50px #ff00ff,
+          0 0 60px #ff00ff,
+          0 0 70px #ff00ff;
+  }
+  100% {
+      opacity: 1;
+      text-shadow:
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 20px #00ff00,
+          0 0 30px #00ff00,
+          0 0 40px #00ff00,
+          0 0 50px #00ff00,
+          0 0 60px #00ff00,
+          0 0 70px #00ff00;
+  }
+}
